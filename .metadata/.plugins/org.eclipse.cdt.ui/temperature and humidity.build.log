@@ -1,0 +1,10 @@
+20:44:54 **** Incremental Build of configuration Debug for project temperature and humidity ****
+make -j6 all 
+arm-none-eabi-size   temperature\ and\ humidity.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23440	    108	   3212	  26760	   6888	temperature and humidity.elf
+Finished building: default.size.stdout
+ 
+
+20:44:54 Build Finished. 0 errors, 0 warnings. (took 194ms)
+

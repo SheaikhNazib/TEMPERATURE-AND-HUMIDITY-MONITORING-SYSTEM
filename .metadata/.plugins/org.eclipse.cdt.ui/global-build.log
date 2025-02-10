@@ -1,0 +1,28 @@
+20:44:10 **** Build of configuration Debug for project temperature and humidity ****
+make -j6 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temperature and humidity.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Semester 11\CSE331 lab\Project\exp1_temp\temperature and humidity\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temperature and humidity.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temperature and humidity.elf
+ 
+arm-none-eabi-size   temperature\ and\ humidity.elf 
+arm-none-eabi-objdump -h -S  temperature\ and\ humidity.elf  > "temperature and humidity.list"
+   text	   data	    bss	    dec	    hex	filename
+  23440	    108	   3212	  26760	   6888	temperature and humidity.elf
+Finished building: default.size.stdout
+ 
+Finished building: temperature and humidity.list
+ 
+20:44:30 **** Incremental Build of configuration Debug for project temperature and humidity ****
+make -j6 all 
+arm-none-eabi-size   temperature\ and\ humidity.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23440	    108	   3212	  26760	   6888	temperature and humidity.elf
+Finished building: default.size.stdout
+ 
+20:44:54 **** Incremental Build of configuration Debug for project temperature and humidity ****
+make -j6 all 
+arm-none-eabi-size   temperature\ and\ humidity.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23440	    108	   3212	  26760	   6888	temperature and humidity.elf
+Finished building: default.size.stdout
+ 
